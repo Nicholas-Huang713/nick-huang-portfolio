@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {withRouter} from 'react-router-dom';
 import css from '../images/css.png';
 import dotnet from '../images/dotnet.png';
@@ -13,7 +13,7 @@ import '../App.css';
 function About() {
     return (
             <div className="container mt-3">
-                <div className="border">
+                <div className="border mb-5">
                     <div className="page-title text-white mb-3">
                         <h3>About Me</h3>
                     </div>
@@ -28,7 +28,7 @@ function About() {
                         <div className="col-sm">
                             <h4 className="ml-5">Languages</h4>
                             <ul> 
-                                <li>Javascript</li>
+                                <li>JavaScript</li>
                                 <li>C#</li>
                                 <li>HTML5</li>
                                 <li>CSS3</li>
@@ -36,7 +36,7 @@ function About() {
                             <h4 className="ml-5">Frameworks/Technologies: </h4>
                             <ul>
                                 <li>ReactJS/Redux</li>
-                                <li>ASP .Net Core</li>
+                                <li>ASP.Net Core</li>
                                 <li>Mongoose</li>
                                 <li>Bootstrap</li>
                                 <li>ExpressJS</li>
@@ -47,8 +47,12 @@ function About() {
                                 <li>MongoDB</li>
                                 <li>MySQL</li>
                             </ul>
+                            <h4 className="ml-5">Version Control: </h4>
+                            <ul>
+                                <li>Git</li>
+                            </ul>
                         </div>
-                        <div className="col-sm text-center mt-5">
+                        <div className="col-sm text-center mt-5"> 
                             <img src={html} className="tech-icon" alt="technology" />
                             <img src={css} className="tech-icon" alt="technology" />
                             <img src={dotnet} className="tech-icon" alt="technology" />

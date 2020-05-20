@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import {withRouter, Link} from 'react-router-dom';
+import React from 'react';
+import {withRouter} from 'react-router-dom';
 import fishazon from '../images/fishazon.png';
 import ohsnap from '../images/ohsnap.png';
 import hiphop from '../images/hiphop.png';
@@ -11,10 +11,12 @@ function Projects() {
                 <div className="page-title text-white">
                     <h3>Projects</h3>
                 </div>
-                <div className="border">
+                <div className="border mb-5">
                     <div className="row mt-4 mb-5">
                         <div className="col-sm text-center">
-                            <img src={fishazon} className="img-thumbnail project-img" alt="project preview"/>
+                            <a href="http://13.52.231.251/" target="_blank" rel="noopener noreferrer">
+                                <img src={fishazon} className="img-thumbnail project-img" alt="project preview"/>
+                            </a>
                         </div>
                         <div className="col-sm">
                             <h5>Fishazon</h5>
@@ -38,16 +40,18 @@ function Projects() {
                     <hr />
                     <div className="row mt-5 mb-5">
                         <div className="col-sm text-center">
-                            <img src={ohsnap} className=" img-thumbnail project-img" alt="project preview"/>
+                            <a href="https://mernohsnap.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                                <img src={ohsnap} className=" img-thumbnail project-img" alt="project preview"/>
+                            </a>
                         </div>
                         <div className="col-sm">
                             <h5>OhSnap</h5>
                             <p>
-                               Technologies/Languages: <span className="text-white bg-dark">Javascript</span>, <span className="text-white bg-dark">ReactJS/Redux</span>, <span className="text-white bg-dark">MongoDB</span>, <span className="text-white bg-dark">NodeJS</span>, <span className="text-white bg-dark">Express</span>, <span className="text-white bg-dark">Bootstrap</span>
+                               Technologies/Languages: <span className="text-white bg-dark">JavaScript</span>, <span className="text-white bg-dark">ReactJS/Redux</span>, <span className="text-white bg-dark">MongoDB</span>, <span className="text-white bg-dark">NodeJS</span>, <span className="text-white bg-dark">ExpressJS</span>, <span className="text-white bg-dark">Bootstrap</span>
                             </p>
                             <p>
                                 OhSnap is an image uploading website based off Instagram. Users can upload images, view other user's albums, comment and add to their favorites.
-                                This website was built with Javascript utilizing ReactJS for the frontend and a MongoDB backend.
+                                This website was built with JavaScript utilizing ReactJS for the frontend and a MongoDB backend.
                             </p>
                             <p>
                                 <a href="https://mernohsnap.herokuapp.com/" target="_blank" rel="noopener noreferrer">
@@ -62,16 +66,18 @@ function Projects() {
                     <hr/>
                     <div className="row mt-5 mb-5">
                         <div className="col-sm text-center">
-                            <img src={hiphop} className="img-thumbnail project-img" alt="project preview"/>
+                            <a href="https://hiphopapp.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                                <img src={hiphop} className="img-thumbnail project-img" alt="project preview"/>
+                            </a>
                         </div>
                         <div className="col-sm">
                             <h5>Hip Hop History</h5>
                             <p>
-                            Technologies/Languages: <span className="text-white bg-dark">Javascript</span>, <span className="text-white bg-dark">ReactJS</span>, <span className="text-white bg-dark">MongoDB</span>, <span className="text-white bg-dark">NodeJS</span>, <span className="text-white bg-dark">Express</span>, <span className="text-white bg-dark">Bootstrap</span>
+                            Technologies/Languages: <span className="text-white bg-dark">JavaScript</span>, <span className="text-white bg-dark">ReactJS</span>, <span className="text-white bg-dark">MongoDB</span>, <span className="text-white bg-dark">NodeJS</span>, <span className="text-white bg-dark">ExpressJS</span>, <span className="text-white bg-dark">Bootstrap</span>
                             </p>
                             <p>
-                                Hip Hop History is website introducing users to hip hop music from different time periods. Users can add songs to their playlist and view other user's playlists.
-                                This website was built with Javascript utilizing ReactJS for the frontend and a MongoDB backend.
+                                Hip Hop History is a website introducing users to hip hop music from different time periods. Users can add songs to their playlist and view other user's playlists.
+                                This website was built with JavaScript utilizing ReactJS for the frontend and a MongoDB backend.
                             </p>
                             <p>
                                 <a href="https://hiphopapp.herokuapp.com/" target="_blank" rel="noopener noreferrer">

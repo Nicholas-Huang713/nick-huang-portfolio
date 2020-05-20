@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import {withRouter, Link} from 'react-router-dom';
+import React from 'react';
+import {withRouter} from 'react-router-dom';
 import email from '../images/email.png';
 import github from '../images/github.png';
 import linkedin from '../images/linkedin.png';
@@ -28,7 +28,7 @@ class Contact extends React.Component {
     }
     render() {
         return (
-                <div className="container mt-3">
+                <div className="container mt-3 mb-5">
                     <div className="page-title text-white">
                         <h3>Contact</h3>
                     </div>
@@ -41,7 +41,7 @@ class Contact extends React.Component {
                         <li className="list-group-item">
                             <img src={linkedin} className="nav-icon" alt="linkedin icon"/> LinkedIn
                             <br />
-                            <a className="contact-link" href="https://www.linkedin.com/in/nicholas-huang-990529179/" target="_blank" rel="noopener noreferrer">linkedin.com/in/nicholas-huang-990529179/</a>
+                            <a className="contact-link" href="https://www.linkedin.com/in/nhuang713/" target="_blank" rel="noopener noreferrer">linkedin.com/in/nhuang713/</a>
                         </li>
                         <li className="list-group-item">
                             <img src={github} className="nav-icon" alt="github icon"/> GitHub

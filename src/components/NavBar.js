@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {withRouter, Link} from 'react-router-dom';
 import github from '../images/github2.png';
 import linkedin from '../images/linkedin.png';
@@ -38,7 +38,7 @@ function NavBar () {
                     <a href="https://github.com/Nicholas-Huang713" target="_blank" rel="noopener noreferrer"><img src={github} className="nav-icon ml-3" alt="github link"/> GitHub</a>
                 </span>
                 <span className="navbar-text">
-                    <a href="https://www.linkedin.com/in/nicholas-huang-990529179/" target="_blank" rel="noopener noreferrer"><img src={linkedin} className="nav-icon ml-3" alt="linkedin link" /> LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/nhuang713/" target="_blank" rel="noopener noreferrer"><img src={linkedin} className="nav-icon ml-3" alt="linkedin link" /> LinkedIn</a>
                 </span>
             </div>
         </nav>
