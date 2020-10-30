@@ -8,13 +8,17 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import {useSelector, useDispatch} from 'react-redux';
 
+const navStyle = {
+  position: 'fixed'
+}
+
 function App() {
   const currentPage = useSelector(state => state.currentPage)
   return (
     <div>
       <div className={`${currentPage==="home" ? "app-bg" : "bg-white"}`}>
         <Router>
-          <NavBar />
+          <NavBar style={navStyle} />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
